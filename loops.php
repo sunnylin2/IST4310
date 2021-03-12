@@ -21,6 +21,8 @@
 	{
     		do {
         		$line = fgets($handle);
+
+			echo $line."<br/>" ;
  
         		// process the line content
  
