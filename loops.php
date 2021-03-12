@@ -15,7 +15,7 @@
     		echo ",";
 	}
 
-	echo "Do While loop example<br/>" ;
+	echo "<br/>Do While loop example<br/>" ;
 	$handle = fopen("file.txt", "r");
 	if ($handle)
 	{
@@ -34,7 +34,7 @@
   		echo sprintf("The square of %d is %d.</br>", $i, $i*$i);
 	}
 
-	echo "Foreach loop example<br/>" ;i
+	echo "Foreach loop example<br/>" ;
 	$fruits = array('apple', 'banana', 'orange', 'grapes');
 	foreach ($fruits as $fruit)
 	{
