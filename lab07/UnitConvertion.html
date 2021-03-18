@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lan="en">
+	<head>
+		<title>Unit Converter</title>
+		<style type="text/css">
+			h1 { color:  red ; }
+			h2 { font-family: Times New Roman; color: blue ; }
+			p { font-family: Ariel; color: green} 
+			input[type=submit] {
+  				background-color: #4CAF50; /* Green */
+  				border: none;
+  				color: white;
+  				padding: 20px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 12px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+			}
+		</style>
+	</head>
+      <body>
+            <h1>Unit Converter</h1>
+            <h2>Please complete ALL fields. Please note the required format of information.</h2>
+            <div>
+                  <form method="post" action="lab07.php">
+                        <p>What is the original unit 
+                        <select name='original_unit' id='original_unit'>
+				<option>Select an original imperial unit to convert</option>
+				<option>inch</option>
+				<option>feet</option>
+				<option>mile</option>
+			</select></p>
+                        <p>Your value(numeric only, the value must in between 0.0 and 120.0)
+                        <input type="number" min="1.0" max="120.0" name="value" id="value" /></p>
+                        <p>What is the target unit 
+                        <select name='target_unit' id='target_unit'>
+				<option>Select a metric target unit</option>
+				<option>centimeter</option>
+				<option>meter</option>
+				<option>kilometer</option>
+			</select></p>
+                        <input type="submit" value="Click to convert" />
+                  </form>
+            </div>
+      </body>
+</html>
