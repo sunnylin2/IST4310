@@ -42,7 +42,7 @@
 	if (isset($_POST['emplno'])) {
 		$emplno = filter_var($_POST['emplno'], FILTER_SANITIZE_STRING) ;
 
-		// Quary database table -- selecting employees table for any employee hired after Januray 1, 2000
+		// Quary database table -- search employees table with specify the employee number
 		$query = "SELECT * FROM employees WHERE emp_no = " . $emplno ;
 		echo "<p>".$query."</p>" ;
 		$ResultSet = @mysqli_query($conn, $query) ;
