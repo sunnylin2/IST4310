@@ -23,8 +23,13 @@
  <h2>Employee Information</h2>
  <div>
 <?php
+	define ( 'DB_HOST', 'localhost' );
+   	define ( 'DB_USER', 'ist4310' );
+   	define ( 'DB_PASSWORD', 'password' );
+   	define ( 'DB_NAME', 'employees' );
+
 	// Open database connection
-	$conn = @mysqli_connect("localhost", "ist4310", "password") ;
+	$conn = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD) ;
 
 	if (!$conn) {
 		echo mysqli_connect_errno().": ".mysqli_connect_error() ;
@@ -33,7 +38,7 @@
 	echo "<p>Database connection is open</p>" ;
 
 	// Select database
-	$DBSelect = @mysqli_select_db($conn, "employees") ;
+	$DBSelect = @mysqli_select_db($conn, DB_NAME) ;
 	if (!$DBSelect) {
 		die("<p>The database is not available.</p>") ;
 	}
@@ -67,3 +72,5 @@
 	// Close the database connection
 	mysqli_close($conn) ;
 ?>
+</div>
+</body>
