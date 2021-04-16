@@ -1,0 +1,20 @@
+*{
+ margin: 0px;
+ padding: 0px;
+ }
+
+#main_container{
+  background-color:#FFFF99;
+  }
+
+#intro_column{
+  background-color:#F08275;
+  }
+
+#current_column{
+  background-color:#8CC9D9;
+  }
+
+#coming_soon_column{
+  background-color:#E6D9F2;
+  }
