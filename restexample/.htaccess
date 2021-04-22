@@ -1,0 +1,6 @@
+# Enable rewrite 
+RewriteEngine on
+
+# Rewrite rules
+RewriteRule ^api/([0-9a-zA-Z_-]*)$ api.php?EmplID=$1 [NC,L]
+RewriteRule ^create create.php [NC,L]

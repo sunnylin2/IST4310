@@ -1,0 +1,40 @@
+<head>
+ <title> Add Employee</title>
+ <style type="text/css">
+  h1 { color:  red ; }
+  h2 { font-family: Times New Roman; color: blue ; }
+  p { font-family: Ariel; color: green}
+  input[type=submit] {
+     background-color: #4CAF50; /* Green */
+     border: none;
+     color: white;
+     padding: 20px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 12px;
+     margin: 4px 2px;
+     cursor: pointer;
+  }
+ </style>
+</head>
+<body>
+ <h1> Add New Employee Information</h1>
+ <h2>Employee Information</h2>
+ <div>
+	<form method="post" action="AddEmployee.php">
+		<p>First Name:
+		<input type="text" pattern="[a-zA-Z ]*" name="FirstName" id="FirstName"></p>
+		<p>Last Name:
+		<input type="text" pattern="[a-zA-Z ]*" name="LastName" id="LastName"></p>
+		<p>Birth Date:
+		<input type="date" name="BirthDate" id="BirthDate"></p>
+		<p>Gender:
+		<input type="radio" name="Gender" id = "Gender" value = "M">Male
+		<input type="radio" name="Gender" id = "Gender" value = "F">Female</p>
+		<p>Hire Date:
+		<input type="date" name="HireDate" id="HireDate"></p>
+		<input type="submit" value="Update Employee" />
+	</form>
+ </div>
+</body>
