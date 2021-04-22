@@ -7,9 +7,9 @@
 	$data = json_decode(file_get_contents("php://input")) ;
 
 	define ( 'DB_HOST', 'localhost' );
-        define ( 'DB_USER', 'employees' );
-        define ( 'DB_PASSWORD', 'password' );
-        define ( 'DB_NAME', 'employees' );
+        define ( 'DB_USER', 'my_username' );
+        define ( 'DB_PASSWORD', 'my_password' );
+        define ( 'DB_NAME', 'my_db' );
 
         $con = @mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME) ;
         if (!$con) {
